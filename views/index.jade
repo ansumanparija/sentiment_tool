@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+  .alt-container
+    img(src="/img/twitterlogo.png")
+    h1 Twitter sentiment Analysis
+    if error
+      div.error #{error}
+    .username
+      .input-group
+        input(type="text", placeholder="Twitter Search Text")
+        span.input-group-button
+          button.btn.btn-primary
+            span.octicon Analyze!
+
+    div.footer
+      .container
+        div.margin
+          
